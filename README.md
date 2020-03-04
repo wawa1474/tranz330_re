@@ -14,7 +14,9 @@ features needed for modern credit card processing bureaus, they
 are available cheaply on the used market.
 
 The logic on the mainboard is fully mapped.
+
 Everything on the display board is fully mapped except for the toroid.
+
 You'd need to take the toroid off the board in order to figure out the internals
 and I don't want to destroy a board to do that.
 
