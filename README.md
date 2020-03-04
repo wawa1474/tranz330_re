@@ -13,9 +13,13 @@ easy to work on.  And since they do not have the security
 features needed for modern credit card processing bureaus, they
 are available cheaply on the used market.
 
-The logic on the mainboard is fully mapped.  
+The logic on the mainboard is fully mapped.
 
-At some point I'll make a logical schematic of the VFD / keypad board.
+Everything on the display board is fully mapped except for the toroid.
+
+You'd need to take the toroid off the board in order to figure out the internals
+and I don't want to destroy a board to do that.
+
 I want to end up with a reference that's useful for writing software
 and tacking on hardware.
 
