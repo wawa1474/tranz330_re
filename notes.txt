@@ -1,0 +1,8 @@
+verifone has many POS' in the Tranz line
+
+Tranz 330 – Z80 CPU at 3.57954 MHz, 32K ROM, 32K, track 2 card reader
+Tranz 340
+Tranz 380 – Z180 CPU at 12.2880 MHz, 64K ROM, 64K or 128K RAM, track 1/2 or 2/3 card reader
+Tranz 380 x2
+Tranz 420
+Tranz 460 – Z80A at 3.57954 MHz, track 1/2 card reader, integrated receipt printer
