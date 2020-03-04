@@ -1,4 +1,4 @@
-# tranz330_re
+# Verifone Tranz 330 Reverse Engineering
 Partial reverse engineering of an old Z80-based card terminal
 
 This repo is for a reverse engineered schematic and other
@@ -14,11 +14,7 @@ features needed for modern credit card processing bureaus, they
 are available cheaply on the used market.
 
 The logic on the mainboard is fully mapped.
-
-Everything on the display board is fully mapped except for the toroid.
-
-You'd need to take the toroid off the board in order to figure out the internals
-and I don't want to destroy a board to do that.
+The display board is fully mapped.
 
 I want to end up with a reference that's useful for writing software
 and tacking on hardware.
