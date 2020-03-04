@@ -1,7 +1,7 @@
 # Verifone Tranz 330 Reverse Engineering
 Partial reverse engineering of an old Z80-based card terminal
 
-This repo is for a reverse engineered schematic and other
+This repo is for reverse engineered schematics and other
 stuff that might be helpful for developing replacement software
 for the Verifone Tranz 330 credit card terminal.
 
@@ -13,8 +13,7 @@ easy to work on.  And since they do not have the security
 features needed for modern credit card processing bureaus, they
 are available cheaply on the used market.
 
-The logic on the mainboard is fully mapped.
-The display board is fully mapped.
+The mainboard and the display board are fully reverse engineered.
 
 I want to end up with a reference that's useful for writing software
 and tacking on hardware.
