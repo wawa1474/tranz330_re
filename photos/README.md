@@ -1,0 +1,1 @@
+The Verifone Tranz 330 line of Point Of Sale Terminals has at least 3 different display board versions.
