@@ -65,9 +65,9 @@ The Z-80 also has a separate 256 port I/O space. For the Tranz 330, these ports 
     Port $11 – CTC channel 1
     Port $12 – CTC channel 2. Chan 2 output is connected to speaker driver.
     Port $13 – CTC channel 3. Chan 3 input trigger is connected to chan 2 output.
-    Port $20 – DART serial port A. 8-pin DIN RS-232 port.
+    Port $20 – DART serial port A. Modem Serial Interface.
     Port $21 – DART control register for port A.
-    Port $22 – DART serial port B. 6-pin DIN accessory port.
+    Port $22 – DART serial port B. 8-pin DIN RS-232 port.
     Port $23 – DART control register for port B.
     Ports $30 – $3F – Real-time clock registers $0-$F
     Ports $40 – $4F – Modem Address Latch Enable (ALE)
