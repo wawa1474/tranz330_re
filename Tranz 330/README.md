@@ -23,10 +23,10 @@ Big Mess O' Wires work at
 https://www.bigmessowires.com/2011/05/10/mapping-the-tranz-330/
 
 # Systems Specs
-* Z-80 CPU at 4 MHz
+* Z-80 CPU at 3.57954 MHz
 * 32K ROM, in a socket for easy replacement
 * 32K RAM
-* 16 character, 16 segment vacuum fluorescent alphanumeric display
+* 16 character, 14 segment vacuum fluorescent alphanumeric display
 * 16 key 4×4 keypad
 * Piezo speaker
 * Magnetic stripe card reader, ISO 7813 Track 2 format
@@ -45,7 +45,9 @@ https://www.bigmessowires.com/2011/05/10/mapping-the-tranz-330/
 # Memory Map
 
 The Z-80 has a 64K memory address space. ROM is mapped to addresses 0 – $7FFF. At startup, program execution begins at address 0. RAM is mapped to addresses $8000 – $FFFF. Typically the stack will begin at $FFFF, growing downward.
-I/O Ports
+
+
+# I/O Ports
 
 The Z-80 also has a separate 256 port I/O space. For the Tranz 330, these ports are mapped as follows (all port numbers in hex):
 
