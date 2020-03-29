@@ -5,7 +5,9 @@
 * U11 [S774] (wrong)
 * U12 [S773] (simple)
 
-U11 appears to use registered outputs and as such logic friday is not a good way to decode the internal logic, so the files for U11 should not be used.
+file U11_wrong appears to use registered outputs and as such logic friday is not a good way to decode the internal logic, so the files for U11 should not be used.
+files U11 and U11_2 shows that maybe its not registered? maybe clk and oe are throwing off logic friday?
+further work is needed before i'm satisfied with U11.
 
 Unfortunately the 3 GALs on the board have their security cell set meaning that I can't just read the configuration data from the chip so some brute force work was required.
 The text file are a brute force reading of the GALs in a CSV format that logic friday accepts.
