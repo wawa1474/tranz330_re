@@ -8,10 +8,11 @@ type up csv file
 //#define U12_2
 //#define U11_2
 //#define U11_3
+#define U11_4
 //#define U7
 //#define U7_2
 //#define U7_3I
-#define U7_3O
+//#define U7_3O
 
 #ifdef U12
 String inputNames[] = {"A4","A6","?I1","/WR","?I2","/RST","A5","/IORQ","/RD","A7"};
@@ -53,7 +54,7 @@ int outputNumbers[] = {12,13,A0,A1,A2,A3,A4,A5};
 int numInput = 8;
 int numOutput = 8;
 int endAddress = 256;
-int U11_clk = 2;
+#define U11_clk 2
 int U11_oe = 11;
 bool clk = false;
 #endif
@@ -78,6 +79,20 @@ int numOutput = 6;
 int endAddress = 256;
 int U11_oe = 11;
 int U11_I1 = 7;
+#endif
+
+#ifdef U11_4
+String inputNames[] = {"MODEM_RxCLK","MODEM_TxCLK","CARD_RD","PIO_PB6","U12_4","/RST","CTC_RxTxCA"};
+String outputNames[] = {"PIO_PA7","RST","RTC_ALE","MODEM_ALE","TxCA","RxCA"};
+int inputNumbers[] = {3,4,5,6,8,9,10};
+int outputNumbers[] = {12,13,A0,A3,A4,A5};
+int numInput = 7;
+int numOutput = 6;
+int endAddress = 128;
+#define U11_clk 2
+int U11_oe = 11;
+int U11_I1 = 7;
+bool clk = false;
 #endif
 
 #ifdef U7
@@ -141,18 +156,18 @@ void setup()
     pinMode(U11_oe,LOW);//grounded on board, no reason to even test
   #endif
 
-  #ifdef U11_3
+  #ifdef U11_clk
     pinMode(U11_oe,OUTPUT);
     pinMode(U11_oe,LOW);//grounded on board, no reason to even test
     pinMode(U11_I1,OUTPUT);
     pinMode(U11_I1,HIGH);//pulled to vcc on board, no reason to even test
   #endif
 
-  #ifdef U11_3
+  #ifdef U12_2
     pinMode(U12_I2,OUTPUT);
     pinMode(U12_I2,LOW);//grounded on board, no reason to even test
     pinMode(U12_I1,OUTPUT);
-    pinMode(U12_I1,HIGH);//pulled to vcc on board, no reason to even test
+    pinMode(U12_I1,LOW);//grounded on board, no reason to even test
   #endif
 
   #ifdef U7_2
@@ -173,7 +188,7 @@ void setup()
   printHeader();
   while(address < endAddress){
     writeAddress();
-    #ifdef U11
+    #ifdef U11_clk
       for(int i = 0; i < 4; i++){
         digitalWrite(U11_clk,clk);
         clk = !clk;
@@ -192,7 +207,7 @@ void loop(){
 }
 
 void printHeader(){
-  #ifdef U11
+  #ifdef U11_clk
     Keyboard.print("clk");delay(10);
     Keyboard.print(',');delay(10);
   #endif
@@ -217,7 +232,7 @@ void writeAddress(){
 }
 
 void printData(){
-  #ifdef U11
+  #ifdef U11_clk
     (clk)?Keyboard.print("1"):Keyboard.print("0");delay(5);
     Keyboard.print(',');delay(5);
   #endif
