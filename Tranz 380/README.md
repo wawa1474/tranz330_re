@@ -6,13 +6,14 @@ The Tranz 380 has a Z180 microcontroller at its heart.
 I want to end up with a reference that's useful for writing software.
 
 # Systems Specs
-* Z-180 CPU at 6.144 MHz (12.288 Mhz crystal /2)
+* Z-180 MPU at 6.144 MHz (12.288 Mhz crystal /2)
+* 3 GAL16v8 to do decoding and other stuff
 * 64K ROM, in a socket for easy replacement
-* 128K RAM
+* 128K battery backed RAM
 * 16 character, 14 segment vacuum fluorescent alphanumeric display
 * 16 key 4×4 keypad
 * Piezo speaker
-* Magnetic stripe card reader, ?
+* Magnetic stripe card reader, Tracks 1/2 or 2/3
 * Z-80 PIO, parallel port interface
 * Z-80 SIO/0, serial port interface
 * Z-80 CTC, counter/timer

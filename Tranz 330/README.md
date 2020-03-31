@@ -25,7 +25,7 @@ https://www.bigmessowires.com/2011/05/10/mapping-the-tranz-330/
 # Systems Specs
 * Z-80 CPU at 3.57954 MHz
 * 32K ROM, in a socket for easy replacement
-* 32K RAM
+* 32K battery backed RAM
 * 16 character, 14 segment vacuum fluorescent alphanumeric display
 * 16 key 4×4 keypad
 * Piezo speaker
