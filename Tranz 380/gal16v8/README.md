@@ -20,6 +20,7 @@
 # U11 is a pain in the butt
 * file U11_wrong appears to use registered outputs and as such logic friday is not a good way to decode the internal logic, so the files for U11 should not be used.
 * files U11 and U11_2 shows that maybe its not registered? maybe clk and oe are throwing off logic friday?
+* file U11_3 shows that it might be simpler than I think. (EDIT) its not MODEM_ALE isn't being flipped so it's wrong.
 * further work is needed before i'm satisfied with U11.
 
 # U12 is simply misunderstood ;)
