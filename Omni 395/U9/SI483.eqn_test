@@ -1,0 +1,16 @@
+# SI483 - PALCE16V8
+NAND4 = (!A18&!A17&!A16&!A19) | (UNK&A19) | (A17&A16&UNK) | (A17&A19) | (
+    A18&A19) | (A18&UNK) | (A16&A19);
+
+NAND1 = (A18&A16&UNK) | (UNK&A19) | (!A18&!A17&!A16) | (A17&!A16&!A19) | (
+    !A17&A16&!A19) | (!UNK&!A19);
+
+WRRAM = (!MREQ&!WR);
+
+OEROM = (!MREQ&!RD);
+
+RDCLK = (!IORQ&!RD);
+
+WRCLK = (!IORQ&!WR);
+
+CEROM = (!A18&!A17&!A16&TP&!A19);
