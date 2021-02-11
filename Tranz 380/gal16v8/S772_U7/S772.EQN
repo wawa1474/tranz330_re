@@ -1,0 +1,30 @@
+
+chip S772 PAL16L8
+
+i1=1 i2=2 i3=3 i4=4 i5=5 i6=6 i7=7 i8=8 i9=9 GND=10 i11=11 o12=12 
+o13=13 i14=14 o15=15 o16=16 o17=17 o18=18 o19=19 VCC=20
+
+equations
+
+/o19 = /i5 * /i6 * /i7 * i14
+o19.oe = vcc
+
+/o12 = /i2 * /i3
+o12.oe = vcc
+
+/o18 = /i1 * /i3
+o18.oe = vcc
+
+/o17 = /i1 * /i4
+o17.oe = vcc
+
+/o16 = /i5 * /i6 * i7 * i8 * /i9 * /i11
+o16.oe = vcc
+
+/o15 = /i2 * /i4
+o15.oe = vcc
+
+/o13 = /i5 * /i6 * i7 * /i8 * /i11 +
+       /i5 * /i6 * i7 * i9
+o13.oe = vcc
+

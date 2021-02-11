@@ -6,23 +6,19 @@
 * The PNGs are the output from logic friday.
 * The Arduino sketch requires something that can act as a keyboard, I used an Arduino Micro in this case.
 
+* Some files have been sent in by "hkzlab" for all three chips, I've not tested them in my system, but they've tested them and they seem to work.
+
 # CHIPS
-* U7 [S1991] (simple?)
-* U11 [S774] (wrong)
-* U12 [S773] (simple)
+* U7 [S1991] / [S772]
+* U11 [S774]
+* U12 [S773]
 
-# U7 is a pain in the butt
-* file U7 might me wrong
-* file U7_2 is definitely wrong
-* file U7_3I appears to be correct
-* file U7_3O is weird but probably wrong
+# U7
+* files present in the "S772_U7" folder sent in by "hkzlab"
+* label "S772" differs from chip in my system "S1991"
 
-# U11 is a pain in the butt
-* file U11_wrong appears to use registered outputs and as such logic friday is not a good way to decode the internal logic, so the files for U11 should not be used.
-* files U11 and U11_2 shows that maybe its not registered? maybe clk and oe are throwing off logic friday?
-* file U11_3 shows that it might be simpler than I think. (EDIT) its not MODEM_ALE isn't being flipped so it's wrong.
-* further work is needed before i'm satisfied with U11.
+# U11
+* files present in the "S774_U11" folder sent in by "hkzlab"
 
-# U12 is simply misunderstood ;)
-* file U12 while not wrong has some useless inputs and outputs on it
-* file U12_2 is therefore the preferred file
+# U12
+* files present in the "S773_U12" folder sent in by "hkzlab"
